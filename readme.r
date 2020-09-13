@@ -1,9 +1,12 @@
+
+## Bumblebee-SlackBuilds to Slackware Current
+
 ## Links
     https://github.com/whitewolf1776/Bumblebee-SlackBuilds
     http://www.nvidia.com/object/unix.html
 
     Last nvidia driver: 450.66
-    Last Slackware Kernel: 5.4.63
+    Last Slackware Kernel: 5.4.65
 
     https://wiki.archlinux.org/index.php/bumblebee#Configuration
     https://docs.slackware.com/howtos:hardware:nvidia_optimus
