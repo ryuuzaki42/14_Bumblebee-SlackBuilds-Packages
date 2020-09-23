@@ -6,7 +6,7 @@
     http://www.nvidia.com/object/unix.html
 
     Last nvidia driver: 450.66
-    Last Slackware Kernel: 5.4.65
+    Last Slackware Kernel: 5.4.66
 
     https://wiki.archlinux.org/index.php/bumblebee#Configuration
     https://docs.slackware.com/howtos:hardware:nvidia_optimus
