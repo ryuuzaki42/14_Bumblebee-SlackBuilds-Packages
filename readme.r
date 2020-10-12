@@ -5,12 +5,14 @@
     https://github.com/whitewolf1776/Bumblebee-SlackBuilds
     http://www.nvidia.com/object/unix.html
 
-    Nvidia driver: 450.66
-    Slackware Current Kernel: 5.4.69
+    Nvidia driver: 450.80.02
+    Slackware Current Kernel: 5.4.70
 
     https://wiki.archlinux.org/index.php/bumblebee#Configuration
     https://docs.slackware.com/howtos:hardware:nvidia_optimus
     https://docs.slackware.com/howtos:hardware:proprietary_graphics_drivers
+
+    https://github.com/ryuuzaki42/Bumblebee-SlackBuilds-Packages
 
 ## Source files used:
     https://github.com/ryuuzaki42/Bumblebee-SlackBuilds-Packages/blob/master/Bumblebee-SlackBuilds.zip
