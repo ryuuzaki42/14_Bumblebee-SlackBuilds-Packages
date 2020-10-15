@@ -6,7 +6,7 @@
     http://www.nvidia.com/object/unix.html
 
     Nvidia driver: 450.80.02
-    Slackware Current Kernel: 5.4.70
+    Slackware Current Kernel: 5.4.71
 
     https://wiki.archlinux.org/index.php/bumblebee#Configuration
     https://docs.slackware.com/howtos:hardware:nvidia_optimus
