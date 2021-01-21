@@ -1,12 +1,14 @@
+# 14_Bumblebee-SlackBuilds-Packages
 
-## Bumblebee-SlackBuilds to Slackware Current
+## Bumblebee-SlackBuilds compiled to Slackware Current
+
+## Version
+    Nvidia driver: 455.45.01
+    Slackware Current Kernel: 5.10.9
 
 ## Links
     https://github.com/whitewolf1776/Bumblebee-SlackBuilds
     http://www.nvidia.com/object/unix.html
-
-    Nvidia driver: 455.45.01
-    Slackware Current Kernel: 5.10.9
 
     https://wiki.archlinux.org/index.php/bumblebee#Configuration
     https://docs.slackware.com/howtos:hardware:nvidia_optimus
@@ -17,45 +19,41 @@
 ## Source files used:
     https://github.com/ryuuzaki42/14_Bumblebee-SlackBuilds-Packages/blob/master/Bumblebee-SlackBuilds-Source.zip
 
-## Install ##
+## How Install ##
 
 ## 0 - clone the repository or donwload
-git clone https://github.com/ryuuzaki42/Bumblebee-SlackBuilds-Packages.git
+    git clone https://github.com/ryuuzaki42/14_Bumblebee-SlackBuilds-Packages.git
 
-    # or download
-https://github.com/ryuuzaki42/Bumblebee-SlackBuilds-Packages/archive/master.zip
+## or download
+    https://github.com/ryuuzaki42/14_Bumblebee-SlackBuilds-Packages/archive/master.zip
 
 ## 1 Create group bumblebee:
-su -
-groupadd bumblebee
+    su -
+    groupadd bumblebee
 
-## 2 Add users to the group:
-    # Change USERNAME to your user name
-usermod -G bumblebee -a USERNAME
+## 2 Add users to the group: # Change USERNAME to your user name
+    usermod -G bumblebee -a USERNAME
 
 ## 3 Install - upgrade packages
+    cd Bumblebee-SlackBuilds-Packages/final_packages/upgrade/
+    upgradepkg xf86-video-nouveau-blacklist-noarch-1.txz 
 
-cd Bumblebee-SlackBuilds-Packages/final_packages/upgrade/
-upgradepkg xf86-video-nouveau-blacklist-noarch-1.txz 
+    cd ../install/
+    upgradepkg --install-new --reinstall *z
 
-cd ../install/
-upgradepkg --install-new --reinstall *z
-
-cd kernel_upgrade/
-upgradepkg --install-new --reinstall *z
+    cd kernel_upgrade/
+    upgradepkg --install-new --reinstall *z
 
 ## 4 Add bumblebee to start
-chmod +x /etc/rc.d/rc.bumblebeed
-echo "/etc/rc.d/rc.bumblebeed start" >> /etc/rc.d/rc.local
+    chmod +x /etc/rc.d/rc.bumblebeed
+    echo "/etc/rc.d/rc.bumblebeed start" >> /etc/rc.d/rc.local
 
 ## 5 Set nouveau to greylist
-echo "xf86-video-nouveau" >> /etc/slackpkg/greylist
+    echo "xf86-video-nouveau" >> /etc/slackpkg/greylist
 
-## Rebbot
+## 6 Rebbot
 
-    ## Kernel Update ##
-
-## Kernel upgrade - rebuilt
+## After a Kernel Update need to rebuilt
     bbswitch
     nvidia-kernel
 
