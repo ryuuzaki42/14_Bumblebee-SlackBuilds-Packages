@@ -5,8 +5,8 @@
     https://github.com/whitewolf1776/Bumblebee-SlackBuilds
     http://www.nvidia.com/object/unix.html
 
-    Nvidia driver: 450.80.02
-    Slackware Current Kernel: 5.4.82
+    Nvidia driver: 455.45.01
+    Slackware Current Kernel: 5.10.9
 
     https://wiki.archlinux.org/index.php/bumblebee#Configuration
     https://docs.slackware.com/howtos:hardware:nvidia_optimus
@@ -15,9 +15,9 @@
     https://github.com/ryuuzaki42/Bumblebee-SlackBuilds-Packages
 
 ## Source files used:
-    https://github.com/ryuuzaki42/Bumblebee-SlackBuilds-Packages/blob/master/Bumblebee-SlackBuilds.zip
+    https://github.com/ryuuzaki42/14_Bumblebee-SlackBuilds-Packages/blob/master/Bumblebee-SlackBuilds-Source.zip
 
-    ## Install ##
+## Install ##
 
 ## 0 - clone the repository or donwload
 git clone https://github.com/ryuuzaki42/Bumblebee-SlackBuilds-Packages.git
@@ -59,7 +59,7 @@ echo "xf86-video-nouveau" >> /etc/slackpkg/greylist
     bbswitch
     nvidia-kernel
 
-    ## Test ##
+## Test ##
 
 ## Note: you need to re-login as the user (or rebbot) for this to take effect
     Run:
@@ -88,7 +88,7 @@ optirun %command%
     ## In some cases, neither of those work (e.g. in Team Fortress 2) so I use:
 LD_PRELOAD="libpthread.so.0 libGL.so.1" __GL_THREADED_OPTIMIZATIONS=1 optirun %command%
 
-    ## Errors #
+## Errors #
 
 ## Error - fatal: failed to load any of the libraries .../libGL.so.1
     ## Backup libGL.so.1
@@ -111,8 +111,8 @@ mv libGLX.so.0 libGLX.so.0.back
     ## Create a link simbolic from libglxserver_nvidia.XXX from the up folder
 ln ../libglxserver_nvidia.so.450.66 ./libGLX.so.0
 
-    ## Now the error glx not appers, but the card is not dectected.
-    ## Need to set manualy the correctly card
+    ## Now the error glx not appears, but the card is not detected.
+    ## Need to set manually the correctly card
 
     ## See the card ID
 lspci | egrep 'VGA|3D'
