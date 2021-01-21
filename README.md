@@ -1,28 +1,35 @@
-# Bumblebee-SlackBuilds compiled to Slackware Current
+## Bumblebee-SlackBuilds compiled to Slackware Current
 
 ## Version
     Nvidia driver: 455.45.01
     Slackware Current Kernel: 5.10.9
 
 ## Links
-    https://github.com/whitewolf1776/Bumblebee-SlackBuilds
-    http://www.nvidia.com/object/unix.html
+[https://github.com/whitewolf1776/Bumblebee-SlackBuilds](https://github.com/whitewolf1776/Bumblebee-SlackBuilds)
 
-    https://wiki.archlinux.org/index.php/bumblebee#Configuration
-    https://docs.slackware.com/howtos:hardware:nvidia_optimus
-    https://docs.slackware.com/howtos:hardware:proprietary_graphics_drivers
+.
 
-    https://github.com/ryuuzaki42/Bumblebee-SlackBuilds-Packages
+[http://www.nvidia.com/object/unix.html](http://www.nvidia.com/object/unix.html)
+
+[https://wiki.archlinux.org/index.php/bumblebee#Configuration](https://wiki.archlinux.org/index.php/bumblebee#Configuration)
+
+[https://docs.slackware.com/howtos:hardware:nvidia_optimus](https://docs.slackware.com/howtos:hardware:nvidia_optimus)
+
+[https://docs.slackware.com/howtos:hardware:proprietary_graphics_drivers](https://docs.slackware.com/howtos:hardware:proprietary_graphics_drivers)
+
+.
+
+[https://github.com/ryuuzaki42/Bumblebee-SlackBuilds-Packages](https://github.com/ryuuzaki42/Bumblebee-SlackBuilds-Packages)
 
 ## Source files used:
-    https://github.com/ryuuzaki42/14_Bumblebee-SlackBuilds-Packages/blob/master/Bumblebee-SlackBuilds-Source.zip
+[https://github.com/ryuuzaki42/14_Bumblebee-SlackBuilds-Packages/blob/master/Bumblebee-SlackBuilds-Source.zip](https://github.com/ryuuzaki42/14_Bumblebee-SlackBuilds-Packages/blob/master/Bumblebee-SlackBuilds-Source.zip)
 
-## How Install ##
+## How Install
 
 ## 0 - clone the repository or donwload
     git clone https://github.com/ryuuzaki42/14_Bumblebee-SlackBuilds-Packages.git
 
-## or download
+## Or download
     https://github.com/ryuuzaki42/14_Bumblebee-SlackBuilds-Packages/archive/master.zip
 
 ## 1 Create group bumblebee:
@@ -51,21 +58,20 @@
 
 Rebbot to test
 
-# After a Kernel Update need to rebuilt
+# After a Kernel update need to rebuilt
     bbswitch
     nvidia-kernel
 
-### Test ##
-
-### Note: you need to re-login as the user (or rebbot) for this to take effect
+### Test - Note: you need to re-login (or rebbot) to update take effect
 Run:
+
     glxinfo | egrep "OpenGL vendor|OpenGL renderer"
 
 ### Result example:
     OpenGL vendor string: Intel
     OpenGL renderer string: Mesa Intel(R) UHD Graphics 620 (KBL GT2)
 
-### If you switched to NVidia card:
+### Now test the NVidia card:
     optirun glxinfo | egrep "OpenGL vendor|OpenGL renderer"
 
 ### Result example:
@@ -86,7 +92,7 @@ Card version of the test: GeForce 930MX
 ## In some cases, neither of those work (e.g. in Team Fortress 2) so I use:
     LD_PRELOAD="libpthread.so.0 libGL.so.1" __GL_THREADED_OPTIMIZATIONS=1 optirun %command%
 
-## Errors #
+# Errors
 
 ## Error - fatal: failed to load any of the libraries .../libGL.so.1
 ### Backup libGL.so.1
