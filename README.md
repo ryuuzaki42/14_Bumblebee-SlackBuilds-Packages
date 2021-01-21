@@ -1,6 +1,4 @@
-# 14_Bumblebee-SlackBuilds-Packages
-
-## Bumblebee-SlackBuilds compiled to Slackware Current
+# Bumblebee-SlackBuilds compiled to Slackware Current
 
 ## Version
     Nvidia driver: 455.45.01
@@ -51,70 +49,72 @@
 ## 5 Set nouveau to greylist
     echo "xf86-video-nouveau" >> /etc/slackpkg/greylist
 
-## 6 Rebbot
+Rebbot to test
 
-## After a Kernel Update need to rebuilt
+# After a Kernel Update need to rebuilt
     bbswitch
     nvidia-kernel
 
-## Test ##
+### Test ##
 
-## Note: you need to re-login as the user (or rebbot) for this to take effect
-    Run:
-glxinfo | egrep "OpenGL vendor|OpenGL renderer"
+### Note: you need to re-login as the user (or rebbot) for this to take effect
+Run:
+    glxinfo | egrep "OpenGL vendor|OpenGL renderer"
 
+### Result example:
     OpenGL vendor string: Intel
     OpenGL renderer string: Mesa Intel(R) UHD Graphics 620 (KBL GT2)
 
-    ## If you switched to NVidia card:
-optirun glxinfo | egrep "OpenGL vendor|OpenGL renderer"
+### If you switched to NVidia card:
+    optirun glxinfo | egrep "OpenGL vendor|OpenGL renderer"
 
+### Result example:
     OpenGL vendor string: NVIDIA Corporation
     OpenGL renderer string: GeForce 930MX/PCIe/SSE2
 
-    ## card version of the test: GeForce 930MX
+Card version of the test: GeForce 930MX
 
 ## Steam run game with bumblebee video card
     https://support.steampowered.com/kb_article.php?ref=6316-GJKC-7437
 
-    ## try
-primusrun %command%
+## Try
+    primusrun %command%
 
-    ## Sometimes optirun is more stable
-optirun %command%
+## Sometimes optirun is more stable
+    optirun %command%
 
-    ## In some cases, neither of those work (e.g. in Team Fortress 2) so I use:
-LD_PRELOAD="libpthread.so.0 libGL.so.1" __GL_THREADED_OPTIMIZATIONS=1 optirun %command%
+## In some cases, neither of those work (e.g. in Team Fortress 2) so I use:
+    LD_PRELOAD="libpthread.so.0 libGL.so.1" __GL_THREADED_OPTIMIZATIONS=1 optirun %command%
 
 ## Errors #
 
 ## Error - fatal: failed to load any of the libraries .../libGL.so.1
-    ## Backup libGL.so.1
-mv /usr/lib64/nvidia-bumblebee/libGL.so.1 /usr/lib64/nvidia-bumblebee/libGL.so.1.back
+### Backup libGL.so.1
+    mv /usr/lib64/nvidia-bumblebee/libGL.so.1 /usr/lib64/nvidia-bumblebee/libGL.so.1.back
 
-    ## Create a link simbolic from libGL.so.1.7.0
-ln -s /usr/lib64/nvidia-bumblebee/libGL.so.1.7.0 /usr/lib64/nvidia-bumblebee/libGL.so.1
+### Create a link simbolic from libGL.so.1.7.0
+    ln -s /usr/lib64/nvidia-bumblebee/libGL.so.1.7.0 /usr/lib64/nvidia-bumblebee/libGL.so.1
 
 ## Error: Module glx does not have a glxModuleData data object.
     https://github.com/WhiteWolf1776/Bumblebee-SlackBuilds/issues/51
 
-    ## Sometimes just need the last part, with set the card in /etc/bumblebee/xorg.conf.nvidia
+### Sometimes just need the last part, with set the card in /etc/bumblebee/xorg.conf.nvidia
 
-    ## Go to the modules folder:
-cd /usr/lib64/nvidia-bumblebee/xorg/modules/
+### Go to the modules folder:
+    cd /usr/lib64/nvidia-bumblebee/xorg/modules/
 
-    ## Backup the old version of libGLX.so.0
-mv libGLX.so.0 libGLX.so.0.back
+### Backup the old version of libGLX.so.0
+    mv libGLX.so.0 libGLX.so.0.back
 
-    ## Create a link simbolic from libglxserver_nvidia.XXX from the up folder
-ln ../libglxserver_nvidia.so.450.66 ./libGLX.so.0
+### Create a link simbolic from libglxserver_nvidia.XXX from the up folder
+    ln ../libglxserver_nvidia.so.450.66 ./libGLX.so.0
 
-    ## Now the error glx not appears, but the card is not detected.
-    ## Need to set manually the correctly card
+### Now the error glx not appears, but the card is not detected.
+### Need to set manually the correctly card
 
-    ## See the card ID
-lspci | egrep 'VGA|3D'
+### See the card ID
+    lspci | egrep 'VGA|3D'
 
-    ## Uncomment the line with "BusID ..." and set the value in the last command.
-    ## I my case the value is "BusID "PCI:01:00:0"
-nano /etc/bumblebee/xorg.conf.nvidia
+### Uncomment the line with "BusID ..." and set the value in the last command.
+### I my case the value is "BusID "PCI:01:00:0"
+    nano /etc/bumblebee/xorg.conf.nvidia
