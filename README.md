@@ -2,7 +2,7 @@
 
 ## Version
     Nvidia driver: 460.39
-    Slackware Current Kernel: 5.10.11
+    Slackware Current Kernel: 5.10.12
 
 ## Links
 [https://github.com/whitewolf1776/Bumblebee-SlackBuilds](https://github.com/whitewolf1776/Bumblebee-SlackBuilds)
