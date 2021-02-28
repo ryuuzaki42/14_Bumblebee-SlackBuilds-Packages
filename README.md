@@ -93,6 +93,11 @@ Card version of the test: GeForce 930MX
 ## In some cases, neither of those work (e.g. in Team Fortress 2) so I use:
     LD_PRELOAD="libpthread.so.0 libGL.so.1" __GL_THREADED_OPTIMIZATIONS=1 optirun %command%
 
+## Note: due to the sync between framerate and refresh rate, you may not see any difference between primusrun and the intel card in glxgears, although you will         
+## see drastic differences playing high end games.  In the past the vblank_mode set to 0 improved framerates and helped with screen tearing, now tho this should
+## only be used for benchmarks or tests:
+    vblank_mode=0 primusrun
+
 # Errors
 
 ## Error - fatal: failed to load any of the libraries .../libGL.so.1
