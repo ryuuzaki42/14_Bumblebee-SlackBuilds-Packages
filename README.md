@@ -5,7 +5,13 @@
     Slackware Current Kernel: 5.13.2
 
 ## Links
+
+Project source:
 [https://github.com/whitewolf1776/Bumblebee-SlackBuilds](https://github.com/whitewolf1776/Bumblebee-SlackBuilds)
+
+
+Source used to build:
+[https://github.com/ryuuzaki42/14_Bumblebee-SlackBuilds-Packages](https://github.com/ryuuzaki42/14_Bumblebee-SlackBuilds-Packages)
 
 .
 
