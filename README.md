@@ -11,7 +11,7 @@ Project source:
 
 
 Source used to build:
-[https://github.com/ryuuzaki42/14_Bumblebee-SlackBuilds-Packages](https://github.com/ryuuzaki42/14_Bumblebee-SlackBuilds-Packages)
+[https://github.com/ryuuzaki42/Bumblebee-SlackBuilds-Source](https://github.com/ryuuzaki42/Bumblebee-SlackBuilds-Source)
 
 .
 
