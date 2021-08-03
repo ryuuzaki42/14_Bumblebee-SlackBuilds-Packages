@@ -2,7 +2,7 @@
 
 ## Version
     Nvidia driver: 460.84
-    Slackware Current Kernel: 5.13.2
+    Slackware Current Kernel: 5.13.7
 
 ## Links
 
