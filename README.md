@@ -1,8 +1,8 @@
 ## Bumblebee-SlackBuilds compiled to Slackware Current
 
 ## Version
-    Nvidia driver: 460.84
-    Slackware Current Kernel: 5.13.7
+    Nvidia driver: 470.82.00
+    Slackware 15.0 Kernel: 5.15.19
 
 ## Links
 
@@ -76,16 +76,16 @@ Run:
 
 ### Result example:
     OpenGL vendor string: Intel
-    OpenGL renderer string: Mesa Intel(R) UHD Graphics 620 (KBL GT2)
+    OpenGL renderer string: Mesa Intel(R) HD Graphics 620 (KBL GT2)
 
 ### Now test the NVidia card:
     optirun glxinfo | egrep "OpenGL vendor|OpenGL renderer"
 
 ### Result example:
     OpenGL vendor string: NVIDIA Corporation
-    OpenGL renderer string: GeForce 930MX/PCIe/SSE2
+    OpenGL renderer string: NVIDIA GeForce 940MX/PCIe/SSE2
 
-Card version of the test: GeForce 930MX
+Card version of the test: GeForce 940MX
 
 ## Steam run game with bumblebee video card
 [https://support.steampowered.com/kb_article.php?ref=6316-GJKC-7437](https://support.steampowered.com/kb_article.php?ref=6316-GJKC-7437)
