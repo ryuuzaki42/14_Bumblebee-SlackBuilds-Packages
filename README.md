@@ -2,7 +2,7 @@
 
 ## Version
     Nvidia driver: 470.82.00
-    Slackware 15.0 Kernel: 5.15.27
+    Slackware 15.0 Kernel: 5.15.38
 
 ## Links
 
