@@ -9,7 +9,6 @@
 Project source:
 [https://github.com/whitewolf1776/Bumblebee-SlackBuilds](https://github.com/whitewolf1776/Bumblebee-SlackBuilds)
 
-
 Source used to build:
 [https://github.com/ryuuzaki42/Bumblebee-SlackBuilds-Source](https://github.com/ryuuzaki42/Bumblebee-SlackBuilds-Source)
 
@@ -26,9 +25,6 @@ Source used to build:
 .
 
 [https://github.com/ryuuzaki42/24_Bumblebee-SlackBuilds-Packages](https://github.com/ryuuzaki42/24_Bumblebee-SlackBuilds-Packages)
-
-## Source files used:
-[https://github.com/ryuuzaki42/24_Bumblebee-SlackBuilds-Packages/blob/master/24_Bumblebee-SlackBuilds-Source.zip](https://github.com/ryuuzaki42/24_Bumblebee-SlackBuilds-Packages/blob/master/Bumblebee-SlackBuilds-Source.zip)
 
 ## How Install
 
@@ -62,7 +58,6 @@ Source used to build:
 Reboot to test
 
 If you use slackpkg+ ([http://slakfinder.org/slackpkg+.html](http://slakfinder.org/slackpkg+.html)), Set nouveau to greylist:
-
     echo "xf86-video-nouveau" >> /etc/slackpkg/greylist
 
 # After a Kernel update need to rebuilt
@@ -71,7 +66,6 @@ If you use slackpkg+ ([http://slakfinder.org/slackpkg+.html](http://slakfinder.o
 
 ### Test - Note: you need to re-login (or rebbot) to update take effect
 Run:
-
     glxinfo | egrep "OpenGL vendor|OpenGL renderer"
 
 ### Result example:
