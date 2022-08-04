@@ -25,18 +25,18 @@ Source used to build:
 
 .
 
-[https://github.com/ryuuzaki42/Bumblebee-SlackBuilds-Packages](https://github.com/ryuuzaki42/Bumblebee-SlackBuilds-Packages)
+[https://github.com/ryuuzaki42/24_Bumblebee-SlackBuilds-Packages](https://github.com/ryuuzaki42/24_Bumblebee-SlackBuilds-Packages)
 
 ## Source files used:
-[https://github.com/ryuuzaki42/14_Bumblebee-SlackBuilds-Packages/blob/master/Bumblebee-SlackBuilds-Source.zip](https://github.com/ryuuzaki42/14_Bumblebee-SlackBuilds-Packages/blob/master/Bumblebee-SlackBuilds-Source.zip)
+[https://github.com/ryuuzaki42/24_Bumblebee-SlackBuilds-Packages/blob/master/24_Bumblebee-SlackBuilds-Source.zip](https://github.com/ryuuzaki42/24_Bumblebee-SlackBuilds-Packages/blob/master/Bumblebee-SlackBuilds-Source.zip)
 
 ## How Install
 
 ## 0 - clone the repository or donwload
-    git clone https://github.com/ryuuzaki42/14_Bumblebee-SlackBuilds-Packages.git
+    git clone https://github.com/ryuuzaki42/24_Bumblebee-SlackBuilds-Packages.git
 
 ## Or download
-[https://github.com/ryuuzaki42/14_Bumblebee-SlackBuilds-Packages/archive/master.zip](https://github.com/ryuuzaki42/14_Bumblebee-SlackBuilds-Packages/archive/master.zip)
+[https://github.com/ryuuzaki42/24_Bumblebee-SlackBuilds-Packages/archive/master.zip](https://github.com/ryuuzaki42/24_Bumblebee-SlackBuilds-Packages/archive/master.zip)
 
 ## 1 Create group bumblebee:
     su -
@@ -59,7 +59,7 @@ Source used to build:
     chmod +x /etc/rc.d/rc.bumblebeed
     echo "/etc/rc.d/rc.bumblebeed start" >> /etc/rc.d/rc.local
 
-Rebbot to test
+Reboot to test
 
 If you use slackpkg+ ([http://slakfinder.org/slackpkg+.html](http://slakfinder.org/slackpkg+.html)), Set nouveau to greylist:
 
