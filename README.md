@@ -1,4 +1,4 @@
-## Bumblebee-SlackBuilds compiled to Slackware Current
+## Bumblebee-SlackBuilds compiled to Slackware 15.0
 
 ## Version
     Nvidia driver: 470.82.00
