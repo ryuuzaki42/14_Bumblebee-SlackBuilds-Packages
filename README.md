@@ -66,6 +66,7 @@ If you use slackpkg+ ([http://slakfinder.org/slackpkg+.html](http://slakfinder.o
 
 ### Test - Note: you need to re-login (or rebbot) to update take effect
 Run:
+
     glxinfo | egrep "OpenGL vendor|OpenGL renderer"
 
 ### Result example:
