@@ -12,8 +12,6 @@ https://github.com/whitewolf1776/Bumblebee-SlackBuilds
 Source used to build:
 https://github.com/ryuuzaki42/Bumblebee-SlackBuilds-Source
 
-.
-
 http://www.nvidia.com/object/unix.html
 
 https://wiki.archlinux.org/index.php/bumblebee#Configuration
@@ -22,9 +20,8 @@ https://docs.slackware.com/howtos:hardware:nvidia_optimus
 
 https://docs.slackware.com/howtos:hardware:proprietary_graphics_drivers
 
-.
-
-https://github.com/ryuuzaki42/24_Bumblebee-SlackBuilds-Packages
+# Alternative - Support with the nVidia Proprietary Driver
+https://github.com/ryuuzaki42/14_Nvidia_Driver_Slackware_Laptop/
 
 ## How Install
 
