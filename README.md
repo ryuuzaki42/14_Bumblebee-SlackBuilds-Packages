@@ -20,7 +20,7 @@ https://docs.slackware.com/howtos:hardware:nvidia_optimus
 
 https://docs.slackware.com/howtos:hardware:proprietary_graphics_drivers
 
-# Alternative - Support with the nVidia Proprietary Driver
+## Alternative - Support with the nVidia Proprietary Driver
 https://github.com/ryuuzaki42/14_Nvidia_Driver_Slackware_Laptop/
 
 ## How Install
